@@ -1,5 +1,6 @@
 EXE=app
-SRCS=$(wildcard *.c)
+#SRCS=$(wildcard *.c)
+SRCS=exercice1.c
 
 ifeq ($(target),)
 target=nano

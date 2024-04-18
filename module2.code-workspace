@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src/02_modules/exercice01"
+		},
+		{
+			"path": "src/02_modules/exercice04"
+		},
+		{
+			"path": "src/02_modules/exercice05"
+		},
+		{
+			"path": "src/02_modules/exercice06"
+		},
+		{
+			"path": "src/02_modules/exercice07"
+		},
+		{
+			"path": "src/02_modules/exercice08"
+		},
+	],
+	"settings": {
+		"files.associations": {
+			"module.h": "c",
+			"kernel.h": "c",
+			"init.h": "c"
+		}
+	}
+}

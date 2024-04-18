@@ -1,5 +1,5 @@
 EXEC=app
-SRCS=$(wildcard *.c)
+SRCS=exercice4.c#$(wildcard *.c)
 
 TOOLCHAIN_PATH=/buildroot/output/host/usr/bin/
 TOOLCHAIN=$(TOOLCHAIN_PATH)aarch64-linux-

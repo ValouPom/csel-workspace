@@ -11,9 +11,9 @@
 #include <linux/miscdevice.h>
 #include <linux/platform_device.h> /* needed for sysfs handling */
 
-//#define MISC
+#define MISC
 //#define PLATFORM
-#define CLASS
+//#define CLASS
 
 struct skeleton_config {
     int id;

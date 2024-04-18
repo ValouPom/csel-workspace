@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src/03_drivers/exercice01"
+		},
+		{
+			"path": "src/03_srivers/exercice02"
+		},
+		{
+			"path": "src/03_srivers/exercice02"
+		},
+		{
+			"path": "src/03_srivers/exercice03"
+		},
+		{
+			"path": "src/03_srivers/exercice04"
+		},
+		{
+			"path": "src/03_srivers/exercice05"
+		},
+		{
+			"path": "src/03_srivers/exercice06"
+		},
+		{
+			"path": "src/03_srivers/exercice07"
+		},
+		{
+			"path": "src/03_srivers/exercice08"
+		},
+	],
+	"settings": {
+		"files.associations": {
+			"module.h": "c",
+			"kernel.h": "c",
+			"init.h": "c"
+		}
+	}
+}
