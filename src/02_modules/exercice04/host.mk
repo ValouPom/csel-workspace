@@ -1,7 +1,7 @@
 ifneq ($(KERNELRELEASE),)
 obj-m += mymodule.o		## name of the generated module
 
-mymodule-objs := skeleton.o	## list of objects needed for that module
+mymodule-objs := exercice4.o	## list of objects needed for that module
 
 else
 KDIR := /lib/modules/$(shell uname -r)/build
