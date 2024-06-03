@@ -44,6 +44,7 @@
 
 #define MAX_FREQ 980000000
 #define FREQ_INC 30000000
+#define MAX_ENVENTS 10
 
 static void toggle_led(int led, int* k) {
     if (*k == 0)
@@ -91,7 +92,7 @@ int main(int argc, char* argv[])
 
     int k = 0;
     while (1) {
-        int nr = epoll_wait(dfs.epfd, events, 10, -1);
+        int nr = epoll_wait(dfs.epfd, events, MAX_ENVENTS, -1);
         if (nr == -1) {
             perror("Wait error");
             return -1;
@@ -108,7 +109,7 @@ int main(int argc, char* argv[])
             if (events[i].data.fd == dfs.k1) {
                 freq += FREQ_INC;
                 if (freq >= MAX_FREQ) {
-                    syslog(LOG_WARNING, "Button k3, frequency too high\n");
+                    syslog(LOG_WARNING, "Button k1, frequency too high\n");
                     freq = MAX_FREQ;
                 } 
 

@@ -14,7 +14,7 @@ int multiplex_create_epoolfd(struct file_descriptors* dfs) {
     dfs->epfd = epoll_create1(0);
     if (dfs->epfd == -1) {
         perror("Error epoll create");
-        return 1; // TODO add macro
+        return 1;
     }
     return 0;
 }

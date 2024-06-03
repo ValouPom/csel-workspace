@@ -9,7 +9,7 @@ int set_time(int tfd, struct itimerspec *timing, long freq) {
 
     if (timerfd_settime(tfd, 0, timing, NULL) == -1) {
         perror("Bad timer fd settime");
-        return 1; // TODO add macro
+        return 1;
     }
     return 0;
 }
