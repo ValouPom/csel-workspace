@@ -10,7 +10,7 @@ MODPATH := /rootfs
 ifneq ($(KERNELRELEASE),)
 obj-m += mymodule.o		## name of the generated module
 
-mymodule-objs := exercice1.o	## list of objects needed for that module
+mymodule-objs := exercice2.o	## list of objects needed for that module
 CFLAGS_skeleton.o := -DDEBUG
 
 # Part executed when called from standard make in module source directory:
