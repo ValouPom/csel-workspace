@@ -36,7 +36,10 @@ static void write_pipe(int fd, char* msg, int mode, int freq) {
         exit(EXIT_FAILURE);
     }
 
-    write(fd, msg, strlen(msg));
+    if (write(fd, msg, strlen(msg)) == -1) {
+        perror("Cannot write the message");
+        exit(EXIT_FAILURE);
+    }
 }
 
 static void auto_fn() {
