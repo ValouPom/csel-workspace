@@ -189,9 +189,12 @@ int main()
             }
 
             if (events[i].data.fd == dfs.tfd) {
+                int temp = 0;
                 if (clear_event_time(dfs.tfd) != 0) {
                     return 1;
                 }
+                module_read_temp(&temp);
+                print_oled_temp(temp);
             }
         }
         print_oled_mode(mode);
